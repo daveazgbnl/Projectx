@@ -47,6 +47,7 @@ stages:
   - job: Deploy
     pool:
       name: winagentpool
+      environment: staging
 
     steps:
 
