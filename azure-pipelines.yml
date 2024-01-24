@@ -44,11 +44,10 @@ stages:
 - stage: Deploy
   dependsOn: Build
   jobs:
-  - job: Deploy
-    pool:
+  - job: Deploy 
+    pool: 
       name: winagentpool
-      environment: dev
-
+    
     steps:
 
     - task: DownloadBuildArtifacts@0
